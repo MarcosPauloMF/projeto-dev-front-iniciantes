@@ -1,0 +1,17 @@
+css {
+. = div
+tag = {}
+}
+
+produtos devem ser persistes
+cadastra-produto ( nome, preço, descrição e data de criação e salvar clicando num botão)
+login
+lista-produto
+exclui-produto 
+desloga
+responsivo
+    
+edita-produto 
+procurar produto
+
+https://www.notion.so/Devs-Front-iniciantes-5db0848ab581481f966d926a91004268
