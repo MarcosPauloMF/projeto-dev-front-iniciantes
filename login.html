@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <h2>Clique aqui para fazer Login</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+<!--         <form class="modal-content animate" action="index.html" method="post"> -->
+        <form class="modal-content animate" action="php/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="img/login_icon.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Usuário</b></label>
+                <input type="text" placeholder="Adicionar e-mail ou nome de usuário" name="uname" 'reg_user' required>
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Informar senha" name="psw" 'pass' required>
+
+                <button type="submit">Login</button>
+
+<!--                 "lembrar de mim" e "cancelar"
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#838383">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div> -->
+        </form>
+    </div>
+
+
+    <script type="module" src="js/login.js"></script>
+</body>
+
+</html>
