@@ -12,71 +12,149 @@
     <link href="css/chamada.css" rel="stylesheet">
     <link href="css/destaques.css" rel="stylesheet">
     <link href="css/rodape.css" rel="stylesheet">
+    <!--     <link href="../javascript-avancado-i-aula1/client/css/bootstrap.css" rel="stylesheet"> -->
 </head>
 
 <body>
 
     <!-- cabeçalho -->
+    <a name="topo-pagina">
+        <div id="topo-pagina">
+        </div>
+    </a>
     <header class="cabecalho container">
         <img src="img/logo-fabapp.svg" alt="cadastre seus produtos" class="cabecalho__logo">
         <nav class="cabecalho__navegacao">
             <ul>
-                <li class="cabecalho__link"><a href="#">Cadastrar produtos</a></li>
-                <li class="cabecalho__link"><a href="#">Ver produtos</a></li>
+                <li class="cabecalho__link"><a href="#cadastra-produtos">Cadastrar produtos</a></li>
+                <li class="cabecalho__link"><a href="#ver-produto">Ver produtos</a></li>
+                <li class="cabecalho__link"><a href="#sobre-pagina">Sobre</a></li>
                 <li class="cabecalho__link sair"><a href="login.html">Sair</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main -->
+    <!-- Chamada -->
     <main>
         <section class="chamada container">
             <h1 class="chamada__titulo">Cadastre seu produto favorito!</h1>
             <p class="chamada__texto">Adicione um produto a hora que quiser</p>
         </section>
 
-        <!-- "adicionar itens" -->
+        <a name="cadastra-produtos">
+            <div id="cadastra-produtos">
+            </div>
+        </a>
+
+
+
+
+        <!-- form para adicionar produtos -->
         <div class="app">
+
             <div class="todo-list">
-                <h1 class="title">
-                    Adicionar produtos
-                </h1>
 
                 <form class="form" action="">
-                    <input class="form-input" type="text" data-form-input>
+                    <input class="form-input" id="adicionaProduto" type="text" data-form-input>
+                    <br>
+
                     <button class="form-button" data-form-button> Novo Item </button>
                 </form>
 
                 <ul class="list" data-list>
+                    <!-- itens da lista -->
                 </ul>
             </div>
         </div>
 
+        <!-- formulário de produtos -->
+        <form class="form grid-container todo-list">
+            <br>
+            <div class="form-group grid-item" >
+                <label for="">Nome</label>
+                <input type="text" id="nome" class="form-control" />
+            </div>
+            <br>
+            <div class="form-group grid-item">
+                <label for="">Preço</label>
+                <input type="value" id="preco" class="form-control" />
+            </div>
+            <br>
+            <div class="form-group grid-item">
+                <label for="">Descrição</label>
+                <input type="text" id="descricao" class="form-control" />
+            </div>
+            <br>
+            <div class="form-group grid-item">
+                <label for="data">Data</label>
+                <input type="date" id="data" class="form-control" autofocus />
+            </div>
+
+            <button class="btn btn-primary" type="submit">Adicionar</button>
+        </form>
+
+
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr class="grid">
+                    <th>DATA</th>
+                    <th>QUANTIDADE</th>
+                    <th>VALOR</th>
+                    <th>VOLUME</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+
+            <tfoot>
+            </tfoot>
+        </table>
+
+
+<!--         <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+        </div> -->
+
         <!-- destaques -->
+        <a name="ver-produto">
+            <div id="ver-produto">
+            </div>
+        </a>
         <section class="destaques container">
             <h2 class="destaques__titulo">Produtos</h2>
-            <a href="#">
+            <a >
                 <figure class="painel destaques__painel">
                     <img src="img/logo_fabapp_fabrica_de_apllicativos.png"
                         alt="Painel do post sobre criação de logotipo" class="destaques__painel-imagem">
                     <figcaption class="destaques__painel-texto">Veja aqui nosso catálogo</figcaption>
                 </figure>
             </a>
-            <!-- painel -->
+
         </section>
+        <div id='bbq'><a name='bbq'></a></div>
     </main>
+
+
+
 
     <!-- rodape -->
     <foot class="rodape container">
+
         <img src="img/fabapp-black.png" alt="Adicione seu produto!" class="rodape__logo rodapePequeno">
 
         <nav>
+            <a name="sobre-pagina">
+                <div id="sobre-pagina">
+                </div>
+            </a>
             <ul class="rodape__navegacao">
-                <li class="rodape__link"><a href="#">Sobre</a></li>
-                <li class="rodape__link"><a href="#">Blog</a></li>
-                <li class="rodape__link"><a href="#">Destaques</a></li>
-                <li class="rodape__link"><a href="#">Institucional</a></li>
-                <li class="rodape__link"><a href="#">Contato</a></li>
+                <li class="rodape__link"><a href="https://fabapp.com.br/">Fabapp</a></li>
+                <li class="rodape__link"><a href="https://blog.fabricadeaplicativos.com.br/">Blog</a></li>
+                <li class="rodape__link"><a href="https://comunidade.fabapp.com/">Comunidade</a></li>
+                <li class="rodape__link"><a href="https://ajuda.fabapp.com/pt-BR/">Ajuda</a></li>
+                <a href="#topo-pagina" class="rodape__link">Clique voltar para o topo</a>
             </ul>
         </nav>
     </foot>
